@@ -43,7 +43,7 @@ function SignupForm(){
                              onBlur={handleBlur}
                            />
                            {errors.name && touched.name ? (
-                           <p className="form_error  " >{errors.name}</p>): null}
+                           <p className="form_error text-red-400 " >{errors.name}</p>): null}
                         </div>
                         <div className="mb-4">
                             <label htmlFor="email" className="block text-gray-600">E-mail</label>
@@ -57,7 +57,7 @@ function SignupForm(){
                              onBlur={handleBlur}
                             /> 
                             {errors.email && touched.email ? (
-                           <p className="form_error text-black-500" >{errors.email}</p>): null}
+                           <p className="form_error text-red-400" >{errors.email}</p>): null}
                             
                         </div>
                           <div className="mb-4">
@@ -72,7 +72,7 @@ function SignupForm(){
                              onBlur={handleBlur}
                              /> 
                              {errors.password && touched.password ? (
-                           <p className="form_error" >{errors.password}</p>): null}
+                           <p className="form_error text-red-400" >{errors.password}</p>): null}
                              
                         </div>
                          
