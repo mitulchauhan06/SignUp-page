@@ -2,7 +2,7 @@
 
 import { ErrorMessage, useFormik } from "formik";
 import {Link} from "react-router-dom";
-
+import PasswordInput from "../PasswordInput";
 import { Schema } from "../Schema";
 import { useState } from "react";
 
@@ -73,7 +73,7 @@ function Sign_Up(){
                         </div>
                           <div className="mb-4">
                             <label htmlFor="password" className="block text-gray-600">Password</label>
-                             <input 
+                             <PasswordInput
                              className={`w-full mt-1 p-2 border rounded-lg ${errors.name && touched.name ? "border-red-500" : "border-gray-300"}`} 
                              id="password"
                              autoComplete="current-password"
@@ -91,7 +91,7 @@ function Sign_Up(){
                          
                           <div className="mb-4">
                             <label htmlFor="password" className="block text-gray-600">Confirm_Password</label>
-                             <input 
+                             <PasswordInput
                              id="comfirm_password"
                              autoComplete="current-password"
                              className={`w-full mt-1 p-2 border rounded-lg ${errors.name && touched.name ? "border-red-500" : "border-gray-300"}`}
