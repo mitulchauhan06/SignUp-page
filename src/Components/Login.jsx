@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom' 
 import { useFormik } from 'formik'
 import { LoginSchema } from "../Schema";
+import PasswordInput from "../PasswordInput";
 
 import {useState} from 'react'
 const Login = () => {
@@ -53,7 +54,7 @@ const Login = () => {
 
             <div className='mb-4'>
                 <label htmlFor='password' className="block text-gray-600 ">  Password </label>
-                    <input type='password' 
+                    <PasswordInput type='password' 
                     id='passwor'
                     name="password" 
                     placeholder='enter your password' 
@@ -68,7 +69,7 @@ const Login = () => {
 
             <div className='mb-4'>
                 <label htmlFor='password' className="block text-gray-600 "> Confirm_Password </label>
-                    <input type='password' 
+                    <PasswordInput type='password' 
                     id='password'
                     autoComplete='confirm_password'
                     name="confirm_password" 
